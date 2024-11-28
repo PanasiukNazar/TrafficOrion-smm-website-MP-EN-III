@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ТрафикОрион</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+        <!-- Libraries Stylesheet -->
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top px-0">
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand ms-3">
+                        <h1 class="text-primary display-5">ТрафикОрион</h1>
+                    </a>
+                    <button
+                        class="navbar-toggler py-2 px-3 me-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse bg-light"
+                        id="navbarCollapse"
+                    >
+                        <div class="navbar-nav ms-auto">
+                            <a
+                                href="index.html"
+                                class="nav-item nav-link active"
+                                >Главная</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >О нас</a
+                            >
+                            <a href="service.html" class="nav-item nav-link"
+                                >Услуги</a
+                            >
+                            <a
+                                href="testimonials.html"
+                                class="nav-item nav-link"
+                                >Отзывы</a
+                            >
+                            <a href="contact.html" class="nav-item nav-link"
+                                >Контакты</a
+                            >
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid carousel-header vh-100 px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="0"
+                        class="active"
+                    ></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img
+                            src="img/carousel-1.jpg"
+                            class="img-fluid"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px">
+                                <h4
+                                    class="text-white text-uppercase fw-bold mb-4"
+                                    style="letter-spacing: 3px"
+                                >
+                                    Обучение в СММ
+                                </h4>
+                                <h1
+                                    class="display-1 text-capitalize text-white mb-4"
+                                >
+                                    Овладейте СММ стратегиями
+                                </h1>
+                                <p class="mb-5 fs-5">
+                                    Научитесь управлять процессом продвижения в
+                                    социальных сетях с помощью эффективных СММ
+                                    стратегий. Наши курсы предоставляют все
+                                    необходимые инструменты для достижения
+                                    успеха в СММ продвижении, а опытные
+                                    преподаватели помогут вам освоить лучшие
+                                    методы и подходы в этой области.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="img/carousel-2.jpg"
+                            class="img-fluid"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px">
+                                <h4
+                                    class="text-white text-uppercase fw-bold mb-4"
+                                    style="letter-spacing: 3px"
+                                >
+                                    СММ Стратегии
+                                </h4>
+                                <h1
+                                    class="display-1 text-capitalize text-white mb-4"
+                                >
+                                    Эффективное продвижение в социальных сетях
+                                </h1>
+                                <p class="mb-5 fs-5">
+                                    Откройте для себя ключевые стратегии для
+                                    успешного продвижения в социальных сетях. Мы
+                                    обучаем созданию контента, управлению
+                                    репутацией, анализу данных и многим другим
+                                    аспектам СММ, чтобы вы могли повысить
+                                    узнаваемость бренда и привлечь целевую
+                                    аудиторию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="img/carousel-3.jpg"
+                            class="img-fluid"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px">
+                                <h4
+                                    class="text-white text-uppercase fw-bold mb-4"
+                                    style="letter-spacing: 3px"
+                                >
+                                    СММ Продвижение
+                                </h4>
+                                <h1
+                                    class="display-1 text-capitalize text-white mb-4"
+                                >
+                                    Привлекайте внимание вашей аудитории
+                                </h1>
+                                <p class="mb-5 fs-5">
+                                    Научитесь работать с различными платформами
+                                    для эффективного СММ продвижения. Наши
+                                    материалы помогут вам создать стратегию,
+                                    которая привлечет внимание целевой
+                                    аудитории, повысит вовлеченность и улучшит
+                                    результаты вашего продвижения в социальных
+                                    сетях.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Approach Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-5">
+                        <div class="h-100">
+                            <img
+                                src="img/approach-1.jpg"
+                                class="img-fluid w-100 h-100"
+                                alt="Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <h5 class="text-uppercase text-primary">
+                            Прозрачность и качество в СММ обучении
+                        </h5>
+                        <h1 class="mb-4">
+                            Наш подход: обучение с доверием в СММ
+                        </h1>
+                        <p class="fs-5 mb-4">
+                            Мы считаем, что доступ к проверенной и независимой
+                            информации является основой для успешного СММ
+                            продвижения. Наш подход в обучении основан на
+                            принципах прозрачности, качества и ответственности.
+                            Мы тщательно отбираем и анализируем ресурсы по СММ,
+                            чтобы предоставить вам актуальную информацию и
+                            лучшие практики для эффективного использования
+                            социальных сетей. Наша команда состоит из экспертов
+                            в области СММ с глубоким пониманием как глобальных,
+                            так и локальных трендов. Каждый представленный нами
+                            ресурс проходит строгую проверку фактов и
+                            объективную оценку, чтобы вы получали только
+                            надежную информацию для достижения успеха в СММ
+                            продвижении. Присоединяйтесь к нам, чтобы освоить
+                            лучшие СММ стратегии и стать частью
+                            профессионального сообщества.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Approach End -->
+
+        <!-- Donation Start -->
+        <div class="container-fluid donation py-5 bg-light">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px">
+                    <h5 class="text-uppercase text-primary">
+                        Почему выбирают нас?
+                    </h5>
+                    <h1 class="mb-4">
+                        Объективность, надежность и глубокий анализ
+                    </h1>
+                    <p>
+                        В мире, насыщенном информацией, крайне важно иметь
+                        доступ к проверенным и объективным материалам по СММ. Мы
+                        предоставляем материалы, на которые можно полагаться.
+                        Наша команда стремится предоставить высококачественную
+                        информацию с глубоким анализом в области СММ. Наша цель
+                        — предложить вам ресурсы, которые не только информируют,
+                        но и расширяют ваше понимание эффективных методов СММ
+                        продвижения и стратегии. Мы гордимся тем, что
+                        предоставляем прозрачную и надежную информацию, которая
+                        является результатом тщательных исследований. С нами вы
+                        получаете доступ к профессионально подготовленным
+                        статьям по СММ, которые помогают лучше понять сложные
+                        вопросы СММ продвижения и стратегии.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="donation-item">
+                            <img
+                                src="img/donation-1.jpg"
+                                class="img-fluid w-100"
+                                alt="Image"
+                            />
+                            <div class="donation-content d-flex flex-column">
+                                <h5 class="text-uppercase text-primary mb-4">
+                                    Проверенная информация по СММ
+                                </h5>
+                                <a
+                                    href="#"
+                                    class="btn-hover-color display-6 text-white"
+                                    >Надежность прежде всего</a
+                                >
+
+                                <p class="text-white mb-4">
+                                    Мы гордимся тем, что предоставляем
+                                    проверенные и независимые материалы по СММ.
+                                    Наша команда тщательно исследует и проверяет
+                                    каждый ресурс, чтобы обеспечить его точность
+                                    и достоверность в области СММ стратегии и
+                                    продвижения. С нами вы можете быть уверены,
+                                    что информация, которую вы читаете, точна и
+                                    объективна.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="donation-item">
+                            <img
+                                src="img/donation-2.jpg"
+                                class="img-fluid w-100"
+                                alt="Image"
+                            />
+                            <div class="donation-content d-flex flex-column">
+                                <h5 class="text-uppercase text-primary mb-4">
+                                    Глубокий анализ СММ
+                                </h5>
+                                <a
+                                    href="#"
+                                    class="btn-hover-color display-6 text-white"
+                                >
+                                    Не просто информация: глубокие анализы и
+                                    контекст СММ стратегии и продвижения</a
+                                >
+
+                                <p class="text-white mb-4">
+                                    Мы предоставляем не только актуальную
+                                    информацию, но и глубокие анализы и
+                                    контекст, которые помогают вам лучше понять
+                                    сложные вопросы СММ. Наши статьи дают
+                                    всесторонний обзор событий в области СММ и
+                                    помогают разобраться в запутанных вопросах и
+                                    темах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Donation End -->
+
+        <!-- Counter Start -->
+        <div
+            class="container-fluid counter py-5"
+            style="
+                background: linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                    ),
+                    url(img/volunteers-bg.jpg) center center;
+                background-size: cover;
+            "
+        >
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px">
+                    <h5 class="text-uppercase text-primary">
+                        Путь к доверию и качеству в обучении СММ
+                    </h5>
+                    <p class="text-white mb-0">
+                        Мы гордимся своими достижениями, которые отражают нашу
+                        приверженность обеспечению качественного обучения в
+                        области СММ. Получение престижных наград и растущее
+                        количество довольных учеников — наши достижения являются
+                        свидетельством наших усилий в обеспечении надежности и
+                        объективности в обучении СММ. Каждый день мы работаем
+                        над тем, чтобы предоставить точную и тщательно
+                        проверенную информацию по СММ, которая помогает нашим
+                        учащимся лучше понять окружающий мир и эффективно
+                        продвигать свои проекты в социальных сетях.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter-item text-center border p-5">
+                            <i class="fas fa-thumbs-up fa-4x text-white"></i>
+                            <h3 class="text-white my-4">
+                                Довольные ученики СММ
+                            </h3>
+                            <div class="counter-counting">
+                                <span
+                                    class="text-primary fs-2 fw-bold"
+                                    data-toggle="counter-up"
+                                    >3600</span
+                                >
+                                <span class="h1 fw-bold text-primary">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter-item text-center border p-5">
+                            <i class="fas fa-book-open fa-4x text-white"></i>
+                            <h3 class="text-white my-4">
+                                Завершенные проекты СММ
+                            </h3>
+                            <div
+                                class="counter-counting text-center border-white w-100"
+                                style="border-style: dotted; font-size: 30px"
+                            >
+                                <span
+                                    class="text-primary fs-2 fw-bold"
+                                    data-toggle="counter-up"
+                                    >513</span
+                                >
+                                <span class="h1 fw-bold text-primary">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter-item text-center border p-5">
+                            <i class="fas fa-user fa-4x text-white"></i>
+                            <h3 class="text-white my-4">
+                                Эксперты по СММ в команде
+                            </h3>
+                            <div
+                                class="counter-counting text-center border-white w-100"
+                                style="border-style: dotted; font-size: 30px"
+                            >
+                                <span
+                                    class="text-primary fs-2 fw-bold"
+                                    data-toggle="counter-up"
+                                    >65</span
+                                >
+                                <span class="h1 fw-bold text-primary">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter-item text-center border p-5">
+                            <i class="fas fa-calendar-alt fa-4x text-white"></i>
+                            <h3 class="text-white my-4">Лет в обучении СММ</h3>
+                            <div
+                                class="counter-counting text-center border-white w-100"
+                                style="border-style: dotted; font-size: 30px"
+                            >
+                                <span
+                                    class="text-primary fs-2 fw-bold"
+                                    data-toggle="counter-up"
+                                    >12</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter End -->
+
+        <!-- Causes Start -->
+        <div class="container-fluid causes py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px">
+                    <h5 class="text-uppercase text-primary">
+                        Текущие проекты в разработке
+                    </h5>
+                    <h1 class="mb-4">
+                        Наши текущие проекты в области СММ: формирование
+                        эффективных стратегий
+                    </h1>
+                    <p class="mb-0">
+                        Мы постоянно работаем над новыми проектами в сфере СММ,
+                        направленными на расширение наших предложений и
+                        предоставление качественного контента. Наши текущие
+                        проекты включают инновационные подходы к обучению,
+                        улучшение СММ стратегии и продвижения, а также
+                        расширение взаимодействия с нашей аудиторией. Через эти
+                        усилия мы стремимся стать вашим основным источником
+                        актуальных и надежных ресурсов по СММ.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="causes-item">
+                            <img
+                                src="img/causes-1.jpg"
+                                class="img-fluid w-100"
+                                alt="Image"
+                            />
+                            <div
+                                class="causes-content d-flex flex-column bg-white p-4"
+                            >
+                                <h5 class="text-primary mb-3">
+                                    Проект 1: Ресурсы для профессионалов СММ
+                                </h5>
+                                <p>
+                                    Мы разрабатываем проект для профессионалов в
+                                    области СММ, который поможет им углубить
+                                    свои знания и улучшить навыки продвижения в
+                                    социальных сетях.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="causes-item">
+                            <img
+                                src="img/causes-2.jpg"
+                                class="img-fluid w-100"
+                                alt="Image"
+                            />
+                            <div
+                                class="causes-content d-flex flex-column bg-white p-4"
+                            >
+                                <h5 class="text-primary mb-3">
+                                    Проект 2: Новые подходы в СММ обучении
+                                </h5>
+                                <p>
+                                    В рамках этого проекта мы разрабатываем
+                                    инновационные образовательные решения по
+                                    СММ, которые помогут более эффективно
+                                    обучать и внедрять СММ стратегии в различных
+                                    сферах бизнеса.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="causes-item">
+                            <img
+                                src="img/causes-3.jpg"
+                                class="img-fluid w-100"
+                                alt="Image"
+                            />
+                            <div
+                                class="causes-content d-flex flex-column bg-white p-4"
+                            >
+                                <h5 class="text-primary mb-3">
+                                    Проект 3: Платформа для обучения СММ
+                                </h5>
+                                <p>
+                                    Мы создаем платформу для обмена знаниями и
+                                    опытом в области СММ, чтобы все могли
+                                    улучшить свои навыки и знания по СММ
+                                    продвижению.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Causes End -->
+
+        <!-- Blog Start -->
+        <div class="container py-5">
+            <div class="container-fluid blog py-5 mb-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px">
+                    <h5 class="text-uppercase text-primary">
+                        Последние обновления в СММ
+                    </h5>
+                    <h1 class="mb-4">
+                        Актуальные темы: Обзор современных трендов в СММ
+                    </h1>
+                    <p>
+                        С нами вы всегда в курсе последних новинок в сфере СММ.
+                        Наша команда следит за актуальными событиями, чтобы
+                        предоставить вам надежную информацию о самых важных
+                        трендах в СММ. Мы предлагаем контент, который ясен,
+                        объективен и направлен на то, чтобы держать вас в курсе
+                        последних изменений в области СММ стратегии и
+                        продвижения.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img
+                                    src="img/blog-1.jpg"
+                                    class="img-fluid w-100"
+                                    alt="SMM Image 1"
+                                />
+                                <div class="blog-info">
+                                    <span
+                                        ><i class="fa fa-clock"></i> Май 01,
+                                        2024</span
+                                    >
+                                    <div class="d-flex">
+                                        <span class="me-3"
+                                            >3 <i class="fa fa-heart"></i
+                                        ></span>
+                                        <a href="#" class="text-white"
+                                            >20 <i class="fa fa-comment"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="search-icon">
+                                    <a
+                                        href="img/blog-1.jpg"
+                                        data-lightbox="Blog-1"
+                                        class="my-auto"
+                                    >
+                                        <i
+                                            class="fas fa-search-plus btn-primary text-white p-3"
+                                        ></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 blog-content">
+                                <h4 class="mb-4">
+                                    Важные события в области СММ
+                                </h4>
+                                <p class="mb-4">
+                                    Современная ситуация в СММ предъявляет новые
+                                    вызовы и решения, которые будут определять
+                                    будущее СММ продвижения. Мы предоставляем
+                                    обзор последних событий в сфере СММ, включая
+                                    анализы и комментарии экспертов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img
+                                    src="img/blog-4.jpg"
+                                    class="img-fluid w-100"
+                                    alt="SMM Image 3"
+                                />
+                                <div class="blog-info">
+                                    <span
+                                        ><i class="fa fa-clock"></i> Сен 01,
+                                        2023</span
+                                    >
+                                    <div class="d-flex">
+                                        <span class="me-3"
+                                            >412 <i class="fa fa-heart"></i
+                                        ></span>
+                                        <a href="#" class="text-white"
+                                            >93 <i class="fa fa-comment"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="search-icon">
+                                    <a
+                                        href="img/blog-4.jpg"
+                                        data-lightbox="Blog-4"
+                                        class="my-auto"
+                                    >
+                                        <i
+                                            class="fas fa-search-plus btn-primary text-white p-3"
+                                        ></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-dark border p-4 blog-content">
+                                <h4 class="mb-4">Культура и общество в СММ</h4>
+                                <p class="mb-4">
+                                    Наши обзоры дают вам представление о
+                                    последних событиях и трендах в области
+                                    искусства, моды, кино и социальной жизни, а
+                                    также их влиянии на СММ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark text-body py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">ТрафикОрион</h4>
+                            <p class="mb-4">
+                                В конце каждого визита на наш сайт мы рады
+                                поделиться ключевой информацией и ресурсами,
+                                которые могут быть полезны для вас. Внизу наших
+                                страниц вы найдете обзор наших контактов, ссылки
+                                на важные разделы и юридическую информацию.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Быстрые ссылки</h4>
+                            <a href="index.html"
+                                ><i class="fas fa-angle-right me-2"></i>
+                                Главная</a
+                            >
+                            <a href="about.html"
+                                ><i class="fas fa-angle-right me-2"></i> О
+                                нас</a
+                            >
+                            <a href="contact.html"
+                                ><i class="fas fa-angle-right me-2"></i>
+                                Контакты</a
+                            >
+                            <a href="terms-of-use.html"
+                                ><i class="fas fa-angle-right me-2"></i> Условия
+                                использования</a
+                            >
+                            <a href="privacy-policy.html"
+                                ><i class="fas fa-angle-right me-2"></i>
+                                Политика конфиденциальности</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Адрес</h4>
+                            <a href=""
+                                ><i class="fas fa-angle-right me-2"></i> Абай
+                                даңғылы 143, Алматы 050000, Казахстан</a
+                            >
+                            <a href=""
+                                ><i class="fas fa-angle-right me-2"></i>
+                                +77778000044</a
+                            >
+                            <a href=""
+                                ><i class="fas fa-angle-right me-2"></i>
+                                traffic_orion@gmail.com</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">Новости</h4>
+                            <p class="mb-4">
+                                Оставайтесь в курсе последних обновлений и
+                                новостей в области SMM! Подпишитесь на нашу
+                                рассылку и получайте регулярные обновления прямо
+                                на ваш email.
+                            </p>
+                            <div class="position-relative mx-auto">
+                                <input
+                                    class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5"
+                                    type="text"
+                                    placeholder="Email"
+                                    id="email"
+                                />
+                                <button
+                                    type="button"
+                                    class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2"
+                                    id="submit"
+                                    onclick="sendForm()"
+                                >
+                                    Подписаться
+                                </button>
+                            </div>
+                            <div
+                                id="result"
+                                style="color: red; font-size: 12px"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"
+            ><i class="fa fa-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">
+                    Согласие на использование cookies
+                </h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует cookies для улучшения и персонализации
+                    вашего опыта при просмотре. Мы предлагаем вам материалы по
+                    обучению в области SMM, а также стратегии и продвижения в
+                    социальных сетях.
+                    <a href="#">Узнать больше...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Согласен</button>
+                <button class="cookie-button" id="declineBtn">
+                    Отказаться
+                </button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
